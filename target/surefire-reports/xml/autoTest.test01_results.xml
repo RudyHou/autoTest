@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="E:/testPj/20181115/autoTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.304">
+  <properties />
+  
+  
+            <testcase name="searchSkuid" time="3.036" classname="autoTest.test01" />
+                <testcase name="searchSkuowner" time="3.366" classname="autoTest.test01" />
+                <testcase name="searchSkucode" time="1.902" classname="autoTest.test01" />
+      
+</testsuite>
