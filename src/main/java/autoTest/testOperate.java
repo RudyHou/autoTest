@@ -35,6 +35,11 @@ public class testOperate {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath(xpath)).click();
     }
+    //选择窗口
+    public static void chooseWindows(String css){
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        driver.findElement(By.cssSelector(css)).click();
+    }
     //输入框输入
     public static void input(String xpath,String info){
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -47,13 +52,13 @@ public class testOperate {
         clearBox.clear();
     }
     //点击按钮
-    public static void search(String xpath){
+    public static void ckickButton(String xpath){
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath(xpath)).click();
     }
     //点击下拉按钮
-    public static void dropDown(String xpath){
-        WebElement click = driver.findElement(By.cssSelector(xpath));
+    public static void dropDown(String css){
+        WebElement click = driver.findElement(By.cssSelector(css));
         click.click();
     }
     //下拉选择框
@@ -63,10 +68,20 @@ public class testOperate {
         WebElement select = driver.findElement(By.cssSelector(css+li));
         select.click();
     }
+    public static void select(String xpath){
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebElement select = driver.findElement(By.xpath(xpath));
+        select.click();
+    }
+    //点击显示更多按钮
+    public static void clickMore(String css){
+        WebElement more = driver.findElement(By.cssSelector(css));
+        more.click();
+    }
     //刷新整个页面
     public static void refresh(){
         try{
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.navigate().refresh();
         } catch (InterruptedException e) {
             e.printStackTrace();

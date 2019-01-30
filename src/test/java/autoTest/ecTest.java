@@ -37,8 +37,8 @@ public class ecTest {
         WebElement select = driver.findElement(By.xpath("//*[@id=\"app1\"]/section/section/main/div[2]/section/form/div[1]/div[3]/div/div/div/span/span/i"));
         select.click();
 
-        WebElement selectes = driver.findElement(By.cssSelector("body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul"));
-        //selectes.click();
+        WebElement selectes = driver.findElement(By.cssSelector(".el-select-dropdown__item"));
+        selectes.click();
 
 //        WebElement selected = driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[19]"));
 //        selected.click();
